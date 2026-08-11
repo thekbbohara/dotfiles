@@ -22,7 +22,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 0;
   background: rgba(9,4,4, 0.95);
-  border: 1px solid #8b94e0;
+  border: 1px solid #a79062;
 }
 
 .notification-content {
@@ -32,7 +32,7 @@
 }
 
 .close-button {
-  background: #2a2e39;
+  background: #16181b;
   color: #090404;
   text-shadow: none;
   padding: 2px;
@@ -47,13 +47,13 @@
 
 .control-center {
   background: rgba(9,4,4, 0.95);
-  border: 2px solid #8b94e0;
+  border: 2px solid #a79062;
   border-radius: 14px;
   padding: 12px;
 }
 
 .widget-title {
-  color: #8b94e0;
+  color: #a79062;
   font-weight: bold;
   font-size: 16px;
   margin: 8px;
@@ -84,5 +84,5 @@
 }
 
 .widget-dnd > switch:checked {
-  background: #8b94e0;
+  background: #a79062;
 }
