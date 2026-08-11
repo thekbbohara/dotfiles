@@ -347,6 +347,13 @@ end)
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/kb/dotfiles/scripts/wallpaper.sh"))
 
 -- WallRizz: open picker (Super+Shift+W), random apply (Super+Ctrl+W)
+wallRizzRule = hl.window_rule({
+    name   = "wallrizz-picker",
+    match  = { title = "WallRizz" },
+    float  = true,
+    size   = { "monitor_w*0.7", "monitor_h*0.7" },
+    center = true,
+})
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("kitty -1 -o allow_remote_control=yes --title=WallRizz WallRizz -n -e -d " .. os.getenv("HOME") .. "/wallpapers"))
 hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd("kitty -1 -o allow_remote_control=yes --class=hidden --title=hidden WallRizz -n -r -d " .. os.getenv("HOME") .. "/wallpapers"))
 

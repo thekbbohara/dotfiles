@@ -15,7 +15,7 @@
 
 window#waybar {
     background-color: rgba(9,4,4, 0.85);
-    border: 1px solid rgba(167,144,98, 0.35);
+    border: 1px solid rgba(210,84,135, 0.35);
     border-radius: 0;
     color: #c1c0c0;
     transition-property: background-color;
@@ -42,24 +42,24 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: #a79062;
+    background-color: #d25487;
     color: #090404;
 }
 
 #workspaces button.urgent {
-    background-color: #16181b;
+    background-color: #19152f;
     color: #090404;
 }
 
 #window {
     background-color: transparent;
-    color: #6a8d85;
+    color: #4e71b3;
     padding: 0 10px;
 }
 
 #clock {
     background-color: #090404;
-    color: #a79062;
+    color: #d25487;
     margin: 4px 0px;
     padding: 2px 14px;
     border-radius: 0;
@@ -67,7 +67,7 @@ window#waybar {
 
 #pulseaudio {
     background-color: #090404;
-    color: #6a8d85;
+    color: #4e71b3;
     margin: 4px 3px;
     padding: 2px 10px;
     border-radius: 0;
@@ -75,7 +75,7 @@ window#waybar {
 
 #cpu {
     background-color: #090404;
-    color: #c34410;
+    color: #3a3b72;
     margin: 4px 3px;
     padding: 2px 10px;
     border-radius: 0;
@@ -83,7 +83,7 @@ window#waybar {
 
 #memory {
     background-color: #090404;
-    color: #cc6a17;
+    color: #643639;
     margin: 4px 3px;
     padding: 2px 10px;
     border-radius: 0;
@@ -91,7 +91,7 @@ window#waybar {
 
 #network {
     background-color: #090404;
-    color: #fbb80d;
+    color: #63a8db;
     margin: 4px 3px;
     padding: 2px 10px;
     border-radius: 0;
@@ -106,7 +106,7 @@ window#waybar {
 
 #custom-notification {
     background-color: #090404;
-    color: #cc6a17;
+    color: #643639;
     margin: 4px 6px 4px 3px;
     padding: 2px 10px;
     border-radius: 0;
