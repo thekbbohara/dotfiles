@@ -1,0 +1,27 @@
+# herdr configuration — mirrors tmux keybindings
+# ~/.config/herdr/config.toml -> ~/kb/dotfiles/.config/herdr/config.toml
+
+[theme]
+# Same flavor as the Catppuccin Mocha tmux status bar
+name = "catppuccin"
+
+[keys]
+# tmux prefix is C-Space
+prefix = "ctrl+space"
+
+# --- Tabs (mirror tmux windows) ---
+new_tab = "prefix+c"       # C-Space c  new tab
+next_tab = "prefix+n"      # C-Space n  next tab
+previous_tab = "prefix+p"  # C-Space p  previous tab
+switch_tab = "prefix+1..9" # C-Space 1..9 switch tab
+rename_tab = "prefix+shift+t" # C-Space , rename tab (tmux: ,)
+
+# --- Workspaces (mirror tmux sessions) ---
+workspace_picker = "prefix+w" # C-Space w  session/workspace list
+
+# --- Panes (mirror tmux splits) ---
+# tmux `-` = stacked (above/below), tmux `|` = side by side
+split_horizontal = "prefix+minus" # stacked
+split_vertical = "prefix+v"       # side by side
+close_pane = "prefix+x"           # tmux: C-Space x
+zoom = "prefix+z"                 # tmux: C-Space z

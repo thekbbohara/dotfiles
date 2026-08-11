@@ -1,0 +1,60 @@
+# Aliases
+
+# ls
+alias ls='eza'
+alias ll='eza -lah --git'
+alias la='eza -a'
+alias tree='eza --tree'
+
+# cat
+alias cat='bat'
+
+# grep
+alias grep='grep --color=auto'
+alias rg='rg --hidden'
+
+# navigation
+alias cd='z'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# git
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph'
+alias gd='git diff'
+
+# system
+alias c='clear'
+alias h='history'
+alias q='exit'
+alias t='tmux'
+alias pac='sudo pacman'
+alias pacSyu='sudo pacman -Syu'
+
+# ai
+alias cc='claude'
+alias ccc='claude --continue'
+alias oc='opencode'
+alias occ='opencode --continue'
+alias km='kimi'
+alias kmc='kimi --continue'
+alias cx='codex --yolo'
+alias cxc='codex --continue'
+alias agyd='agy --dangerously-skip-permissions'
+
+# tools
+alias her='herdr'
+alias v='nvim'
+
+# agent init
+anit() {
+  [ -f AGENTS.md ] || printf '# AGENTS.md\n' > AGENTS.md
+  [ -e CLAUDE.md ] || ln -s AGENTS.md CLAUDE.md
+}
+agent-init() {
+  [ -f AGENTS.md ] || printf '# AGENTS.md\n' > AGENTS.md
+  [ -e CLAUDE.md ] || ln -s AGENTS.md CLAUDE.md
+}

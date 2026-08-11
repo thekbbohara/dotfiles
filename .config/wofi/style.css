@@ -1,0 +1,64 @@
+/* ==============================================================================
+ * WOFI STYLE - DYNAMIC (PYWAL)
+ * Processed by pywal16 from ~/.config/wal/templates/wofi-style.css
+ * Color placeholders: #090404 #c1c0c0 #090404..#c1c0c0
+ * ============================================================================== */
+
+window {
+    margin: 0px;
+    background-color: rgba(9,4,4, 0.92);
+    border: 2px solid #8b94e0;
+    border-radius: 0px;
+    font-family: "Inter", "Sans-Serif";
+    font-size: 14px;
+}
+
+#input {
+    margin: 12px;
+    padding: 10px 14px;
+    border: 1px solid #090404;
+    border-radius: 0px;
+    color: #c1c0c0;
+    background-color: #090404;
+}
+
+#input:focus {
+    border: 1px solid #8b94e0;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #c1c0c0;
+}
+
+#entry {
+    padding: 8px 12px;
+    border-radius: 0px;
+}
+
+#entry:selected {
+    background-color: #090404;
+}
+
+#entry:selected #text {
+    color: #8b94e0;
+    font-weight: bold;
+}

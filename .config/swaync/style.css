@@ -1,0 +1,88 @@
+/* ==============================================================================
+ * SWAYNC STYLE - DYNAMIC (PYWAL)
+ * Processed by pywal16 from ~/.config/wal/templates/swaync-style.css
+ * Color placeholders: #090404 #c1c0c0 #090404..#c1c0c0
+ * ============================================================================== */
+
+* {
+  font-family: "Inter", "Sans-Serif";
+}
+
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus, .notification-row:hover {
+  background: #090404;
+}
+
+.notification {
+  border-radius: 12px;
+  margin: 6px 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 0;
+  background: rgba(9,4,4, 0.95);
+  border: 1px solid #8b94e0;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.close-button {
+  background: #2a2e39;
+  color: #090404;
+  text-shadow: none;
+  padding: 2px;
+  border-radius: 100%;
+  margin-top: 5px;
+  margin-right: 5px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.control-center {
+  background: rgba(9,4,4, 0.95);
+  border: 2px solid #8b94e0;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.widget-title {
+  color: #8b94e0;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.widget-title > button {
+  background: #090404;
+  color: #c1c0c0;
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: 1px solid #665353;
+}
+
+.widget-title > button:hover {
+  background: #665353;
+}
+
+.widget-dnd {
+  background: #090404;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.widget-dnd > switch {
+  border-radius: 8px;
+  background: #665353;
+}
+
+.widget-dnd > switch:checked {
+  background: #8b94e0;
+}
