@@ -5,6 +5,7 @@ WALL_DIR="$HOME/wallpapers"
 TARGET="$HOME/.config/hypr/wallpaper.png"
 LOCK="/tmp/wallpaper-loop.pid"
 WAL_PY="$HOME/.local/venvs/wal/bin/python3"
+WAL_BIN="${WAL_BIN:-$HOME/.local/bin/wal}"
 
 change() {
     local wall
@@ -15,7 +16,7 @@ change() {
     else
         cp "$wall" "$TARGET"
     fi
-    wal -i "$TARGET" --backend fast_colorthief8 -a 85 -q -n >/dev/null 2>&1 || true
+    "$WAL_BIN" -i "$TARGET" --backend fast_colorthief8 -a 85 -q -n >/dev/null 2>&1 || true
     # Touch the WezTerm config so running terminals reload their palette.
     touch "$HOME/.config/wezterm/wezterm.lua" 2>/dev/null || true
     cp "$HOME/.cache/wal/style.css" "$HOME/.config/waybar/style.css" 2>/dev/null || true
