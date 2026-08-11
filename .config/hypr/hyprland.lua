@@ -346,6 +346,10 @@ end)
 -- Change wallpaper immediately
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/kb/dotfiles/scripts/wallpaper.sh"))
 
+-- WallRizz: open picker (Super+Shift+W), random apply (Super+Ctrl+W)
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("kitty -1 -o allow_remote_control=yes --title=WallRizz WallRizz -n -e -d " .. os.getenv("HOME") .. "/wallpapers"))
+hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd("kitty -1 -o allow_remote_control=yes --class=hidden --title=hidden WallRizz -n -r -d " .. os.getenv("HOME") .. "/wallpapers"))
+
 -- Quick Settings popup (Super+Escape / Win+Esc)
 hl.bind(mainMod .. " + Escape", function()
     hl.exec_cmd(os.getenv("HOME") .. "/.local/bin/quicksettings")

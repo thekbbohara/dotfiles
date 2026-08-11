@@ -8,8 +8,10 @@ WAL_PY="$HOME/.local/venvs/wal/bin/python3"
 WAL_BIN="${WAL_BIN:-$HOME/.local/bin/wal}"
 
 change() {
-    local wall
-    wall="$(find "$WALL_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) 2>/dev/null | shuf -n 1)"
+    local wall="${1:-}"
+    if [[ -z "$wall" ]]; then
+        wall="$(find "$WALL_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) 2>/dev/null | shuf -n 1)"
+    fi
     [[ -n "$wall" ]] || { echo "no wallpapers found in $WALL_DIR" >&2; return 1; }
     if [[ "${wall,,}" != *.png ]]; then
         "$WAL_PY" -c "from PIL import Image; Image.open('$wall').convert('RGB').save('$TARGET', 'PNG')" 2>/dev/null || cp "$wall" "$TARGET"
@@ -36,7 +38,7 @@ change() {
 }
 
 if [[ "${1:-}" == "--once" ]]; then
-    change
+    change "${2:-}"
     exit 0
 fi
 
