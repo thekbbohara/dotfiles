@@ -22,7 +22,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 0;
   background: rgba(9,4,4, 0.95);
-  border: 1px solid #6f7da2;
+  border: 1px solid #2e9feb;
 }
 
 .notification-content {
@@ -31,7 +31,7 @@
 }
 
 .close-button {
-  background: #192432;
+  background: #3e322a;
   color: #090404;
   text-shadow: none;
   padding: 2px;
@@ -45,12 +45,12 @@
 
 .control-center {
   background: rgba(9,4,4, 0.95);
-  border: 1px solid #6f7da2;
+  border: 1px solid #2e9feb;
   padding: 12px;
 }
 
 .widget-title {
-  color: #6f7da2;
+  color: #2e9feb;
   font-weight: bold;
   font-size: 16px;
   margin: 8px;
@@ -78,5 +78,5 @@
 }
 
 .widget-dnd > switch:checked {
-  background: #6f7da2;
+  background: #2e9feb;
 }

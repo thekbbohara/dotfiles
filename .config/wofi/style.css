@@ -7,7 +7,7 @@
 window {
     margin: 0px;
     background-color: rgba(9,4,4, 0.92);
-    border: 2px solid #d25487;
+    border: 2px solid #2e9feb;
     border-radius: 0px;
     font-family: "Inter", "Sans-Serif";
     font-size: 14px;
@@ -23,7 +23,7 @@ window {
 }
 
 #input:focus {
-    border: 1px solid #d25487;
+    border: 1px solid #2e9feb;
 }
 
 #inner-box {
@@ -59,6 +59,6 @@ window {
 }
 
 #entry:selected #text {
-    color: #d25487;
+    color: #2e9feb;
     font-weight: bold;
 }
