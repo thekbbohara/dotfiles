@@ -344,7 +344,7 @@ hl.bind(mainMod .. " + SHIFT + T", function()
 end)
 
 -- Change wallpaper immediately
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/.local/bin/wallpaper-toggle.sh next"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(os.getenv("HOME") .. "/kb/dotfiles/scripts/wallpaper-toggle.sh next"))
 
 -- WallRizz: open picker (Super+Shift+W), random apply (Super+Ctrl+W)
 wallRizzRule = hl.window_rule({
