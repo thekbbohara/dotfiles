@@ -8,6 +8,10 @@ WAL_PY="$HOME/.local/venvs/wal/bin/python3"
 WAL_BIN="${WAL_BIN:-$HOME/.local/bin/wal}"
 
 change() {
+    # Video wallpaper active (mpvpaper) - don't touch hyprpaper, would cover the video.
+    if pgrep -x mpvpaper > /dev/null 2>&1; then
+        return 0
+    fi
     local wall="${1:-}"
     if [[ -z "$wall" ]]; then
         wall="$(find "$WALL_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) 2>/dev/null | shuf -n 1)"
