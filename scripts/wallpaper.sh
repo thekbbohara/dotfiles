@@ -22,7 +22,9 @@ change() {
     else
         cp "$wall" "$TARGET"
     fi
-    "$WAL_BIN" -i "$TARGET" --backend fast_colorthief8 -a 85 -q -n >/dev/null 2>&1 || true
+    # --contrast keeps every ANSI colour readable on the background (WCAG 4.5:1);
+    # --cols16 lighten makes 8-15 real bright variants instead of copies of 0-7.
+    "$WAL_BIN" -i "$TARGET" --backend fast_colorthief8 -a 85 --contrast 4.5 --cols16 lighten -q -n >/dev/null 2>&1 || true
     # Touch the WezTerm config so running terminals reload their palette.
     touch "$HOME/.config/wezterm/wezterm.lua" 2>/dev/null || true
     cp "$HOME/.cache/wal/style.css" "$HOME/.config/waybar/style.css" 2>/dev/null || true
